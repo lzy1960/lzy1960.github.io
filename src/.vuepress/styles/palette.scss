@@ -1,0 +1,16 @@
+// you can change colors here
+$theme-color: #0AA5C4;
+
+@font-face {
+  font-family: 'Sarasa UI SC';
+  src: url(../fonts/sarasa-ui-sc-regular.ttf);
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url(../fonts/FiraCode-Regular.ttf);
+}
+
+$font-family: 'Sarasa UI SC';
+$font-family-heading: 'Sarasa UI SC';
+$font-family-mono: 'Fira Code';
