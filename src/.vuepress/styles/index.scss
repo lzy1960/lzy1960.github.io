@@ -50,8 +50,10 @@ html[data-theme='light'] {
   }
 }
 .blog-hero {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   .hero-image {
     border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   }
   .mask::after {
     background: none;
