@@ -6,7 +6,7 @@ export default defineUserConfig({
   base: "/",
 
   head: [
-    ['script', { src: '/scripts/video.ts' }]
+    ['script', { src: '/scripts/video.js' }]
   ],
   locales: {
     // "/": {
