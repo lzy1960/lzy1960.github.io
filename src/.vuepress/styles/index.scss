@@ -1,4 +1,10 @@
 // place your custom styles here
+@media (max-width: 719px) {
+  .blog-hero .hero-image {
+    max-height: 8rem;
+  }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
