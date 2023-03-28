@@ -4,6 +4,11 @@
     max-height: 8rem;
   }
 }
+.theme-hope-content:not(.custom) > p,
+.theme-hope-content:not(.custom) > ul p,
+.theme-hope-content:not(.custom) > ol p {
+  text-align: start;
+}
 
 @keyframes fadeIn {
   0% {
