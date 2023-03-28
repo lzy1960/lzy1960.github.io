@@ -19,7 +19,9 @@ export default hopeTheme({
 
   repo: "lzy1960",
 
-  docsDir: "docs",
+  docsRepo: 'lzy1960/lzy1960.github.io',
+
+  docsDir: "src",
 
   blog: {
     roundAvatar: true,
