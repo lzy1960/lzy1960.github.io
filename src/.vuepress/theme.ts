@@ -10,7 +10,7 @@ export default hopeTheme({
 
   author: {
     name: "Storm Lee",
-    url: "https://blog.stormlee.site",
+    url: "https://me.stormlee.site",
   },
 
   iconAssets: "iconfont",
