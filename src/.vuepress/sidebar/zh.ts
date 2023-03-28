@@ -5,9 +5,16 @@ export const zhSidebar = sidebar({
     "",
     {
       text: "docs",
-      icon: "linux",
+      icon: "note",
       prefix: "docs/",
-      children: "structure",
+      children: [
+        {
+          text: "wsl2",
+          icon: "linux",
+          prefix: "wsl2/",
+          children: 'structure'
+        },
+      ]
     },
     "intro",
   ],
