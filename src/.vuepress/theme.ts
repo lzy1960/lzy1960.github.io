@@ -74,8 +74,9 @@ export default hopeTheme({
       provider: "Giscus",
       repo: "lzy1960/blog-giscus",
       repoId: "R_kgDOJNW-qg",
-      category: 'gossip',
-      categoryId: 'gossip',
+      category: 'Show and tell',
+      categoryId: 'DIC_kwDOJNW-qs4CVFe0',
+      mapping: 'title',
     },
 
     // all features are enabled for demo, only preserve features you need here
