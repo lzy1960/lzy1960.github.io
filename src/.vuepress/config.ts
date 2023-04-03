@@ -21,8 +21,8 @@ export default defineUserConfig({
     // },
     "/": {
       lang: "zh-CN",
-      title: "vuepress2-blog",
-      description: "vuepress2-blog",
+      title: "前端踩坑路",
+      description: "记录我的前端踩坑之路",
     },
   },
 
@@ -30,6 +30,6 @@ export default defineUserConfig({
   theme,
 
   // Enable it with pwa
-  // shouldPrefetch: false,
+  shouldPrefetch: true,
 
 });
