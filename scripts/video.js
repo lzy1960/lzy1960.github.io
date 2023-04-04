@@ -3,7 +3,6 @@ function initVideo() {
     div.setAttribute('id', 'hero-video-wrapper');
     var video = document.createElement('video');
     video.setAttribute('id', 'hero-video');
-    video.poster = '/background.jpg';
     video.src = '/background.mp4';
     video.autoplay = true;
     video.loop = true;
