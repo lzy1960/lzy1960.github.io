@@ -2,13 +2,13 @@
 home: true
 layout: BlogHome
 icon: home
-title: Storm Lee
-heroImage: /avatar.jpg
-heroAlt: Storm Lee Avatar
-heroText: Storm Lee
+title: Storm Lee的博客首页
+heroImage: /heroImage.jpg
+heroAlt: Storm Lee Avatar(您)
+heroText: Storm Lee的博客首页
 bgImage: /
 heroFullScreen: false
-tagline: 我的首页
+tagline: 不定期记录知识、总结笔记，不限于前端、踩坑、技术
 # projects:
 #   - icon: project
 #     name: 项目名称
