@@ -1,12 +1,10 @@
 ---
 title: wsl2可视化界面
-author: Storm Lee
 icon: linux
 isOriginal: false
 date: 2023-03-30
 tag: [前端, wsl2]
 star: true
-figure: true
 ---
 
 #### 前言

@@ -1,6 +1,5 @@
 ---
 title: wsl出现Vmmem内存占用过大的问题
-author: Storm Lee
 icon: linux
 isOriginal: true
 date: 2023-03-28

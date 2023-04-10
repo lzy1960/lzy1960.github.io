@@ -1,6 +1,5 @@
 ---
 title: wsl2配置前端开发环境
-author: Storm Lee
 icon: linux
 isOriginal: true
 date: 2022-11-11

@@ -1,12 +1,10 @@
 ---
 title: ChatGpt和newBing访问不了？Warp和ipv6分流帮你解决！
-author: Storm Lee
 icon: alias
 isOriginal: true
 date: 2023-04-10
 tag: [服务器, vps]
 star: true
-figure: true
 ---
 
 ## 前言
