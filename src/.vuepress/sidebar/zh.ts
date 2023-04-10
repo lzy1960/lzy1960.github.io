@@ -14,6 +14,12 @@ export const zhSidebar = sidebar({
           prefix: "wsl2/",
           children: 'structure'
         },
+        {
+          text: "vps",
+          icon: "fly",
+          prefix: "vps/",
+          children: 'structure'
+        },
       ]
     },
     "intro",
