@@ -21,7 +21,7 @@ export default defineUserConfig({
     // },
     "/": {
       lang: "zh-CN",
-      title: "前端踩坑路",
+      title: "Storm Lee的前端踩坑路",
       description: "记录我的前端踩坑之路",
     },
   },
