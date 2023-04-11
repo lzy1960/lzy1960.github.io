@@ -7,11 +7,6 @@ export default defineUserConfig({
 
   head: [
     ['script', { src: '/scripts/video.js' }],
-    ['script', {
-      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5722919995882918',
-      crossorigin: 'anonymous',
-      async: true,
-    }],
   ],
   locales: {
     // "/": {
