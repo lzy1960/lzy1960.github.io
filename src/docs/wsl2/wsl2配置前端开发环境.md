@@ -9,6 +9,8 @@ star: true
 
 ## 开始
 
+![wsl2-linux](/assets/images/wsl2/wsl2-linux.png)
+
 > 本文根据自己在配置 wsl 过程中遇到的问题，整理出一套在 wsl 中配置前端开发环境的流程
 >
 > 因此，省略了创建 wsl 子系统的步骤
@@ -73,13 +75,13 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 ### 配置 zsh
 
-重启 wsl 终端，输入 `ezs`
+重启 wsl 终端，输入`ezs`
 
 配置地址：https://github.com/lzy1960/powershell-config/blob/main/.zshrc
 
 配置中包含了 npm 别名、git 别名、样式等配置，直接复制粘贴即可
 
-完成后输入 `szs` 使配置生效
+完成后输入`szs`使配置生效
 
 ### 新建项目文件夹
 
@@ -130,14 +132,67 @@ git config --global pull.ff true                       # overrides merge.ff when
 sudo apt-get install --reinstall $(sudo apt-get install unzip | grep "warning: files list file for package '" | grep -Po "[^'\n ]+'" | grep -Po "[^']+");
 ```
 
-第一句 `sudo apt-get install unzip` 是为了获取到所有的问题包，有时需要换成其他的语句
+第一句`sudo apt-get install unzip`是为了获取到所有的问题包，有时需要换成其他的语句
 
 这时候去吃个饭，吃完就好了
 
-### Zone. Identifier 文件
+### Zone.Identifier 文件
 
-在 `powershell` 中执行以下命令即可
+在`powershell`中执行以下命令即可
 
 ```bash
 find . -name "*:Zone.Identifier" -type f -delete
 ```
+
+### No apport report written because MaxReports is reached already
+
+参考链接：[https://ubuntuforums.org/showthread.php?t=2372251](https://ubuntuforums.org/showthread.php?t=2372251)
+
+执行`sudo apt install`或`sudo apt upgrade`出现以上报错，可以按照以下方法尝试修复
+
+先执行`sudo apt --fix-broken install`，看是否能修复
+
+如果不能，并且最后提示类似以下的提示：
+
+```bash
+......
+dpkg: error processing archive /var/cache/apt/archives/libxdamage1_1%3a1.1.5-2build2_i386.deb (--unpack):
+ trying to overwrite shared '/usr/share/doc/libxdamage1/changelog.Debian.gz', which is different from other instances of package libxdamage1:i386
+Errors were encountered while processing:
+ /var/cache/apt/archives/libcairo-gobject2_1.16.0-5ubuntu2_i386.deb
+ /var/cache/apt/archives/libwayland-cursor0_1.20.0-1ubuntu0.1_i386.deb
+ /var/cache/apt/archives/libxdamage1_1%3a1.1.5-2build2_i386.deb
+needrestart is being skipped since dpkg has failed
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+```
+
+那么去`/var/lib/dpkg/info/`，可以先查看一下目录下是否存在 Errors 中提示的文件
+
+```bash
+ls | grep libcairo-gobject
+```
+
+如果存在，会输出：
+
+```bash
+libcairo-gobject2:amd64.list
+libcairo-gobject2:amd64.md5sums
+libcairo-gobject2:amd64.postinst
+libcairo-gobject2:amd64.postrm
+libcairo-gobject2:amd64.shlibs
+libcairo-gobject2:amd64.symbols
+libcairo-gobject2.control
+libcairo-gobject2.list
+libcairo-gobject2.md5sums
+libcairo-gobject2.shlibs
+libcairo-gobject2.symbols
+libcairo-gobject2.triggers
+```
+
+删除这些文件，例如
+
+```bash
+rm -rf libcairo-gobject2* libwayland-cursor* libxdamage*
+```
+
+重新执行`sudo apt upgrade`，即可成功执行
