@@ -7,17 +7,17 @@ tag: [前端, wsl2]
 star: true
 ---
 
-#### 前言
+## 前言
 
 微软正在计划让 WSL2 支持基于 RDP 的 GUI，虽然这一特性目前还不可用，但我们还是能通过别的一些手段来达到目的。
 
-#### 准备环境
+## 准备环境
 
 * Windows 10 （版本：2004）
 
 * WSL2（Ubuntu 20.04 LTS）（[如何安装 WSL2?](https://docs.microsoft.com/zh-cn/windows/wsl)）
 
-#### 安装工具
+## 安装工具
 
 1、先把 `apt`   `update`  &  `upgrade`
 
@@ -58,7 +58,7 @@ sudo vim /etc/xrdp/startwm.sh
 sudo /etc/init.d/xrdp start
 ```
 
-#### 开始使用
+## 开始使用
 
 使用 Windows 的远程桌面连接，通过 WSL 的 IP 地址 `:3389` ， `3389` 为默认端口，可以在配置 `/etc/xrdp/xrdp.ini` 中更改。
 用 WSL 的用户名和密码登录进系统
