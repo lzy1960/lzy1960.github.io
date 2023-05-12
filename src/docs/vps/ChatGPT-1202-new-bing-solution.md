@@ -1,5 +1,5 @@
 ---
-title: ChatGpt和newBing访问不了？Warp和ipv6分流帮你解决！
+title: ChatGpt无法访问，错误代码1020？New Bing网络拒绝？解决办法如下
 icon: alias
 isOriginal: true
 date: 2023-04-10
@@ -9,7 +9,7 @@ star: true
 
 ## 前言
 
-ChatGpt 出来已经很久了，某天兴致勃勃地注册了账号，准备体验一下它的强大之处，一个大大的`Access denied`出现在我眼前，经过网上的一番查找，确认 vps 的 ip 被封了。于是，疯狂寻找解决办法，最终找到了这个方法。
+ChatGpt 出来已经很久了，某天兴致勃勃地注册了账号，准备体验一下它的强大之处，一个大大的`Access denied`出现在我眼前，错误代码为 1020，经过网上的一番查找，确认 vps 的 ip 被封了。于是，疯狂寻找解决办法，最终找到了这个方法。
 
 ![chatgpt拒绝图](/assets/images/vps/chatgpt_access_denied.png)
 
