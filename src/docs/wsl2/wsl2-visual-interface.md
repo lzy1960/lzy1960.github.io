@@ -35,7 +35,9 @@ sudo apt install -y xfce4-goodies
 （**非必须**）更改 `XRDP` 的一些配置：增加 bpp(bits per pixel)，让远程连接质量更好
 
 ```bash
-sudo sed -i 's/max_bpp=32/#max_bpp=32\nmax_bpp=128/g' /etc/xrdp/xrdp.ini sudo sed -i 's/xserverbpp=24/#xserverbpp=24\nxserverbpp=128/g' /etc/xrdp/xrdp.ini echo xfce4-session > ~/.xsession
+sudo sed -i 's/max_bpp=32/#max_bpp=32\nmax_bpp=128/g' /etc/xrdp/xrdp.ini
+sudo sed -i 's/xserverbpp=24/#xserverbpp=24\nxserverbpp=128/g' /etc/xrdp/xrdp.ini
+echo xfce4-session > ~/.xsession
 ```
 
 接下来更改 `XRDP` 的启动脚本，让它同时启动 `Xfce`
@@ -46,10 +48,10 @@ sudo vim /etc/xrdp/startwm.sh
 
 把文件的最后几行改成这样：
 
-```vim
-# test -x /etc/X11/Xsession && exec /etc/X11/Xsession
-# exec /bin/sh /etc/X11/Xsession
-# xfce startxfce4
+```bash
+test -x /etc/X11/Xsession && exec /etc/X11/Xsession
+exec /bin/sh /etc/X11/Xsession
+xfce startxfce4
 ```
 
 最后，启动 `XDRP`
