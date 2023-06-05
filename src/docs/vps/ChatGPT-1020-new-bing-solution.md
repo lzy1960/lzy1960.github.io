@@ -1,5 +1,5 @@
 ---
-title: ChatGpt无法访问，错误代码1020？New Bing网络拒绝？解决办法如下
+title: 如何修复ChatGPT 访问被拒绝错误代码1020
 icon: alias
 isOriginal: true
 date: 2023-04-10
