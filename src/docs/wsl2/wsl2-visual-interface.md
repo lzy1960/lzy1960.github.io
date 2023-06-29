@@ -1,5 +1,5 @@
 ---
-title: wsl2可视化界面
+title: wsl2 Ubuntu安装图形界面(使用window远程桌面)
 icon: linux
 isOriginal: false
 date: 2023-03-30
@@ -13,15 +13,15 @@ star: true
 
 ## 准备环境
 
-* Windows 10 （版本：2004）
+- Windows 10 （版本：2004） 或 Windows 11
 
-* WSL2（Ubuntu 20.04 LTS）（[如何安装 WSL2?](https://docs.microsoft.com/zh-cn/windows/wsl)）
+- WSL2（Ubuntu 22.04 LTS）（[如何安装 WSL2?](https://docs.microsoft.com/zh-cn/windows/wsl)）
 
 ## 安装工具
 
 1、先把 `apt`   `update`  &  `upgrade`
 
- `sudo apt update && sudo apt -y upgrade`
+`sudo apt update && sudo apt -y upgrade`
 
 2、安装 `XRDP` （远程连接协议）、 `Xfce` （轻量级桌面环境，安装时会提示选择 gdm3 或 lightdm，我选了 gdm3）
 
@@ -49,9 +49,12 @@ sudo vim /etc/xrdp/startwm.sh
 把文件的最后几行改成这样：
 
 ```bash
-test -x /etc/X11/Xsession && exec /etc/X11/Xsession
-exec /bin/sh /etc/X11/Xsession
-xfce startxfce4
+# 注释掉前三行
+# test -x /etc/X11/Xsession && exec /etc/X11/Xsession
+# exec /bin/sh /etc/X11/Xsession
+# xfce
+# 添加最后一行
+startxfce4
 ```
 
 最后，启动 `XDRP`
