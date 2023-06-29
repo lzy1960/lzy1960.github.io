@@ -38,7 +38,7 @@ enable=false
 appendWindowsPath=true
 
 [network]
-generateResolvConf = false
+generateResolvConf=false # 为了自定义ip，如果不需要可忽略或设置为true
 ```
 
 ### 设置代理
@@ -67,6 +67,8 @@ chsh -s /bin/zsh # 设为默认终端
 
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# npm-aliases
+git clone https://github.com/lzy1960/zsh-npm-aliases ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/npm-aliases
 # zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 # zsh-syntax-highlighting
@@ -93,7 +95,16 @@ mkdir ~/Desktop/project
 
 跟着文档走：https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl
 
-### 配置静态 ip
+### 配置静态 ip (如果不需要可跳过)
+
+打开`/etc/wsl.conf`，添加如下代码：
+
+```bash
+[network]
+generateResolvConf=false
+```
+
+打开`/etc/resolv.conf`，添加`nameserver 192.168.50.1`
 
 ```bash
 # 在windows中
@@ -106,6 +117,8 @@ powershell -c "Get-NetAdapter 'vEthernet (WSL)' | Get-NetIPAddress | Remove-NetI
 
 然后重启 wsl 终端
 
+> ip 可自行修改
+>
 > 重启电脑以后会失效，需要重新运行脚本
 
 ### 配置 git
