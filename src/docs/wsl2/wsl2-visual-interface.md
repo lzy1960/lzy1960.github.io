@@ -1,5 +1,5 @@
 ---
-title: wsl2 Ubuntu安装图形界面(使用window远程桌面)
+title: wsl2 Ubuntu安装可视化图形界面(使用window远程桌面)
 icon: linux
 isOriginal: false
 date: 2023-03-30
