@@ -7,7 +7,13 @@ tag: [前端, wsl2]
 star: true
 ---
 
-官方教程：[https://learn.microsoft.com/zh-cn/windows/wsl/install](https://learn.microsoft.com/zh-cn/windows/wsl/install)
+![wsl2-linux](/assets/images/wsl2/wsl2-linux.png)
+
+> 本文根据自己在配置 wsl 过程中遇到的问题，整理出一套在 wsl 中配置前端开发环境的流程
+>
+> 按照以下顺序操作即可
+>
+> 也可以参阅官方教程：[https://learn.microsoft.com/zh-cn/windows/wsl/install](https://learn.microsoft.com/zh-cn/windows/wsl/install)
 
 ## 前言
 
@@ -15,7 +21,7 @@ star: true
 
 但在 2023 年 9 月更新了 wsl2.0 版本，彻底解决了 wsl2 与 Windows 之间的网络问题。
 
-**现在我宣布，wsl2 是最好的 linux 发行版！**
+**🎉 现在我宣布，wsl2 是最好的 linux 发行版！**
 
 ## 先决条件
 
