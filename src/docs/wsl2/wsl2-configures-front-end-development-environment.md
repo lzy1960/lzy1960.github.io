@@ -1,10 +1,14 @@
 ---
-title: wsl2配置前端开发环境
+title: 🚫已过时，请参阅新版教程 | wsl2配置前端开发环境
 icon: linux
 isOriginal: true
 date: 2022-11-11
 tag: [前端, wsl2]
 star: true
+---
+
+**<span style="color: orange">⚠️ 注意：由于 9 月 wsl2.0 更新了多项功能，重点解决了网络和代理问题，因此下方的一些配置不再需要，请移步 👉[新版 WSL2 安装教程](./wsl2-new-install.md)👈</span>**
+
 ---
 
 ## 开始

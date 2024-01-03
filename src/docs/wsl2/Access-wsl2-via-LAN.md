@@ -1,10 +1,14 @@
 ---
-title: 通过局域网访问wsl2
+title: 🚫已过时，请参阅新版教程 | 通过局域网访问wsl2
 icon: linux
 isOriginal: true
 date: 2023-04-13
 tag: [前端, wsl2]
 star: true
+---
+
+**<span style="color: orange">⚠️ 注意：由于 9 月 wsl2.0 更新了多项功能，重点解决了网络和代理问题，因此可直接自动代理相同的端口和ip，无需配置端口映射，请移步 👉[新版 WSL2 安装教程](./wsl2-new-install.md)👈</span>**
+
 ---
 
 ## 背景
