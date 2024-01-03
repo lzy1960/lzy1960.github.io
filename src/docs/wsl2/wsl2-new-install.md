@@ -98,13 +98,13 @@ wsl2 默认安装在 C 盘，如果您为了节省 C 盘空间，可以转移至
 可分别执行以下命令：
 
 ```sh
-## 以下每条命令，类似【K:\Ubuntu-22.04_bak.tar】的地址可自行修改
-## 1. 备份系统
+# 以下每条命令，类似【K:\Ubuntu-22.04_bak.tar】的地址可自行修改
+# 1. 备份系统
 wsl --export Ubuntu-22.04 K:\Ubuntu-22.04_bak.tar
-## 2. 还原系统至某个目录
-## 格式为：wsl --import Ubuntu-22.04 xxx(目标路径) xxx(刚刚备份的地址)
+# 2. 还原系统至某个目录
+# 格式为：wsl --import Ubuntu-22.04 xxx(目标路径) xxx(刚刚备份的地址)
 wsl --import Ubuntu-22.04 k:\Ubuntu-22.04 K:\Ubuntu-22.04_bak.tar
-## 3. 将备份的系统tar文件删除(可选)
+# 3. 将备份的系统tar文件删除(可选)
 ```
 
 ### 修改基础配置
@@ -169,11 +169,11 @@ chsh -s /bin/zsh ## 设为默认终端
 
 ```sh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-## npm-aliases
+# npm-aliases
 git clone https://github.com/lzy1960/zsh-npm-aliases ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/npm-aliases
-## zsh-autosuggestions
+# zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-## zsh-syntax-highlighting
+# zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
