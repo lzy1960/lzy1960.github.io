@@ -200,6 +200,22 @@ mkdir ~/Desktop ~/Desktop/project
 
 跟着文档走：[https://learn.microsoft.com/zh-cn/windows/dev-environment/javascript/nodejs-on-wslopen in new window](https://learn.microsoft.com/zh-cn/windows/dev-environment/javascript/nodejs-on-wsl)
 
+### 配置 git
+
+```sh
+git config --global user.name xxx # 修改为自己的
+git config --global user.email xxxxxx # 修改为自己的
+git config --global credential.helper store # 防止每次都需要输入密码
+
+git config --global core.ignorecase false              # 开启大小写敏感
+git config --global merge.conflictstyle diff3          # 三路合并(3-way merge)，便于合并解决冲突
+git config --global credential.helper store            # 不用每次询问密码
+git config --global merge.ff false                     # 非快进合并，强制产生merge节点
+git config --global pull.ff true                       # overrides merge.ff when pulling
+```
+
+配置完成，可以开始开发了
+
 ### 🚫 老版教程中无需进行的配置（无需配置，此处只是列出）
 
 #### 🚫 网络代理（无需配置）
