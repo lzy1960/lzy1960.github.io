@@ -8,7 +8,7 @@ function initVideo() {
     video.autoplay = true;
     video.loop = true;
     video.muted = true;
-    var blogHero = document.querySelector('.blog-hero');
+    var blogHero = document.querySelector('.vp-blog-hero');
     div.appendChild(video);
     blogHero === null || blogHero === void 0 ? void 0 : blogHero.appendChild(div);
 }
