@@ -10,7 +10,7 @@ function initVideo () {
   video.loop = true
   video.muted = true
 
-  const blogHero = document.querySelector('.blog-hero')
+  const blogHero = document.querySelector('.vp-blog-hero')
   div.appendChild(video)
   blogHero?.appendChild(div)
 }
