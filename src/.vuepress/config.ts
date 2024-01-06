@@ -6,7 +6,7 @@ export default defineUserConfig({
   base: "/",
 
   head: [
-    ['script', { src: '/scripts/video.js' }],
+    ['script', { src: '/scripts/video.js', async: true }],
   ],
   locales: {
     // "/": {
@@ -20,7 +20,7 @@ export default defineUserConfig({
       description: "记录我的前端踩坑之路",
     },
   },
-
+  
   // theme,
   theme,
 

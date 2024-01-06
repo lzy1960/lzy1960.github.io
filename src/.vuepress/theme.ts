@@ -29,7 +29,6 @@ export default hopeTheme({
       BiliBili: "https://space.bilibili.com/2984035",
       GitHub: "https://github.com/lzy1960",
       Gmail: "mailto:info@lzy196055@gmail.com",
-      Rss: "https://example.com",
       Twitter: "https://twitter.com/5lSqhZpcSOCCDPh",
     },
   },
@@ -47,7 +46,7 @@ export default hopeTheme({
 
       footer: "默认页脚",
 
-      displayFooter: true,
+      displayFooter: false,
 
       blog: {
         description: "一个前端开发者",
