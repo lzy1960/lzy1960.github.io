@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://stormlee.site/sitemap.xml
+Sitemap: https://stormlee.top/sitemap.xml
