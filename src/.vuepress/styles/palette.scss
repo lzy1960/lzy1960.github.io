@@ -3,12 +3,12 @@ $theme-color: #0AA5C4;
 
 @font-face {
   font-family: 'Sarasa UI SC';
-  src: url(/assets/fonts/sarasa-ui-sc-regular.ttf);
+  src: url(/assets/fonts/sarasa-ui-sc-regular.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Fira Code';
-  src: url(/assets/fonts/FiraCode-Regular.ttf);
+  src: url(/assets/fonts/FiraCode-Regular.woff2) format('woff2');
 }
 
 $font-family: 'Sarasa UI SC';
