@@ -68,4 +68,4 @@ sudo /etc/init.d/xrdp start
 使用 Windows 的远程桌面连接，通过 WSL 的 IP 地址 `:3389` ， `3389` 为默认端口，可以在配置 `/etc/xrdp/xrdp.ini` 中更改。
 用 WSL 的用户名和密码登录进系统
 
-![效果图](/assets/images/wsl2/wsl2-desktop.png)
+![效果图](/assets/images/wsl2/wsl2-desktop.webp)

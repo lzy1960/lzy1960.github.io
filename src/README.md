@@ -3,7 +3,7 @@ home: true
 layout: BlogHome
 icon: home
 title: Storm Lee的博客首页
-heroImage: /heroImage.jpg
+heroImage: /heroImage.webp
 heroAlt: Storm Lee Avatar(您)
 heroText: Storm Lee的博客首页
 bgImage: /

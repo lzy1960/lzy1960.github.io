@@ -11,7 +11,7 @@ star: true
 
 ChatGpt 出来已经很久了，某天兴致勃勃地注册了账号，准备体验一下它的强大之处，一个大大的`Access denied`出现在我眼前，错误代码为 1020，经过网上的一番查找，确认 vps 的 ip 被封了。于是，疯狂寻找解决办法，最终找到了这个方法。
 
-![chatgpt拒绝图](/assets/images/vps/chatgpt_access_denied.png)
+![chatgpt拒绝图](/assets/images/vps/chatgpt_access_denied.webp)
 
 ## 准备工作
 
@@ -55,7 +55,7 @@ wget -N https://gitlab.com/rwkgyg/CFwarp/raw/main/CFwarp.sh && bash CFwarp.sh
 
 偶然发现微软 New Bing 也无法访问了，会提示网络被拒绝，如下图
 
-![newbing拒绝图](/assets/images/vps/newbing_error.png)
+![newbing拒绝图](/assets/images/vps/newbing_error.webp)
 
 ### 解决办法
 

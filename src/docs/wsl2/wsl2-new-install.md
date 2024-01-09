@@ -7,7 +7,7 @@ tag: [前端, wsl2]
 star: true
 ---
 
-![wsl2-linux](/assets/images/wsl2/wsl2-linux.png)
+![wsl2-linux](/assets/images/wsl2/wsl2-linux.webp)
 
 > 本文根据自己在配置 wsl 过程中遇到的问题，整理出一套在 wsl 中配置前端开发环境的流程
 >
@@ -35,9 +35,9 @@ star: true
 ## 安装前的准备工作
 
 1. 按下 win 键，或点击任务栏的搜索框，输入【windows 功能】，点击打开【启用或关闭 windows 功能】
-   ![启用或关闭 windows 功能](/assets/images/wsl2/windows-search-func.png)
+   ![启用或关闭 windows 功能](/assets/images/wsl2/windows-search-func.webp)
 2. 勾选如下选项，并点击【确定】，等待安装完成后，按照提示重启计算机
-   ![勾选虚拟机功能](/assets/images/wsl2/windows-func-selection.png)
+   ![勾选虚拟机功能](/assets/images/wsl2/windows-func-selection.webp)
 3. 重启后，打开命令行终端，输入`wsl -v`，可正常返回大量参数
 
 ## 开始安装

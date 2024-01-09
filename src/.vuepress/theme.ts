@@ -15,7 +15,7 @@ export default hopeTheme({
 
   iconAssets: "iconfont",
 
-  logo: "/avatar.jpg",
+  logo: "/avatar.webp",
 
   repo: "lzy1960",
 

@@ -13,7 +13,7 @@ star: true
 
 ## 开始
 
-![wsl2-linux](/assets/images/wsl2/wsl2-linux.png)
+![wsl2-linux](/assets/images/wsl2/wsl2-linux.webp)
 
 > 本文根据自己在配置 wsl 过程中遇到的问题，整理出一套在 wsl 中配置前端开发环境的流程
 >
