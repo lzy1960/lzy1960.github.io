@@ -1,5 +1,5 @@
+import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from "vuepress";
-import { path } from "@vuepress/utils";
 import theme from "./theme.js";
 
 export default defineUserConfig({
@@ -26,5 +26,10 @@ export default defineUserConfig({
 
   // Enable it with pwa
   shouldPrefetch: true,
+
+  bundler: viteBundler({
+    viteOptions: {},
+    vuePluginOptions: {},
+  }),
 
 });
