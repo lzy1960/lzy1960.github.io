@@ -8,27 +8,27 @@ heroAlt: Storm Lee Avatar(您)
 heroText: Storm Lee的博客首页
 bgImage: /
 heroFullScreen: false
-tagline: 不定期记录知识、总结笔记，不限于前端、踩坑、技术
-# projects:
-#   - icon: project
-#     name: 项目名称
-#     desc: 项目详细描述
-#     link: https://你的项目链接
+tagline: 不定期记录知识、总结笔记，喜欢捣鼓新东西的前端开发者
+projects:
+  - icon: github
+    name: vue-findway
+    desc: 寻路算法的可视化展示（A*）
+    link: https://github.com/lzy1960/vue-findway
 
-#   - icon: link
-#     name: 链接名称
-#     desc: 链接详细描述
-#     link: https://链接地址
+  - icon: github
+    name: zsh-npm-aliases
+    desc: Aliases for npm, yarn and pnpm in zsh
+    link: https://github.com/lzy1960/zsh-npm-aliases
 
-#   - icon: book
-#     name: 书籍名称
-#     desc: 书籍详细描述
-#     link: https://你的书籍链接
+  - icon: config
+    name: myconfig
+    desc: 我个人使用的各种配置，包括windows字体、powershell、vscode、oh my zsh、oh my posh、starship
+    link: https://github.com/lzy1960/myconfig
 
-#   - icon: article
-#     name: 文章名称
-#     desc: 文章详细描述
-#     link: https://你的文章链接
+  - icon: npm
+    name: google-translate
+    desc: 一款谷歌翻译api的工具库
+    link: https://github.com/lzy1960/google-translate
 
 #   - icon: friend
 #     name: 伙伴名称
@@ -40,5 +40,5 @@ tagline: 不定期记录知识、总结笔记，不限于前端、踩坑、技�
 #     desc: 自定义详细介绍
 #     link: https://你的自定义链接
 
-footer: 个人博客
+footer: Storm Lee 的个人博客
 ---

@@ -14,8 +14,8 @@ export default defineUserConfig({
     // },
     "/": {
       lang: "zh-CN",
-      title: "Storm Lee的前端踩坑路",
-      description: "记录我的前端踩坑之路",
+      title: "Storm Lee的博客",
+      description: "Storm Lee的博客，喜欢捣鼓新东西，WSL2 前端开发环境使用者",
     },
   },
 
