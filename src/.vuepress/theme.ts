@@ -13,7 +13,7 @@ export default hopeTheme({
     url: "https://stormlee.top",
   },
 
-  iconAssets: "iconfont",
+  iconAssets: "iconify",
 
   logo: "/avatar.webp",
 
@@ -24,7 +24,6 @@ export default hopeTheme({
   docsDir: "src",
 
   blog: {
-    roundAvatar: true,
     medias: {
       BiliBili: "https://space.bilibili.com/2984035",
       GitHub: "https://github.com/lzy1960",
