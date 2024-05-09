@@ -1,6 +1,6 @@
 <template>
   <HopeBlogHero>
-    <template #heroBg>
+    <template #bg>
       <div id="hero-video-wrapper">
         <video id="hero-video" src="/background.mp4" poster="/background.webp" autoplay loop muted />
       </div>
@@ -9,6 +9,7 @@
 </template>
 <script setup lang="ts">
 import HopeBlogHero from "vuepress-theme-hope/modules/blog/components/BlogHero.js";
+console.log('HopeBlogHero', HopeBlogHero);
 </script>
 
 <style lang="scss" scoped>

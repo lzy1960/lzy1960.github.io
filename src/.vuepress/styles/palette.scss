@@ -11,6 +11,11 @@ $theme-color: #0AA5C4;
   src: url(/assets/fonts/UbuntuSansNerdFont-Regular.woff2) format('woff2');
 }
 
+@font-face {
+  font-family: 'UbuntuSansMonoNerdFont';
+  src: url(/assets/fonts/UbuntuSansMonoNerdFont-Regular.woff2) format('woff2');
+}
+
 $font-family: '"UbuntuSansNerdFont", "Sarasa Term SC"';
 $font-family-heading: '"UbuntuSansNerdFont", "Sarasa Term SC"';
-$font-family-mono: '"UbuntuSansNerdFont", "Sarasa Term SC"';
+$font-family-mono: '"UbuntuSansMonoNerdFont", "Sarasa Term SC"';
