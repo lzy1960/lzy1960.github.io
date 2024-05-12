@@ -9,11 +9,11 @@ star: true
 
 ![wsl2-linux](/assets/images/wsl2/wsl2-linux.webp)
 
-> 本文根据自己在配置 wsl 过程中遇到的问题，整理出一套在 wsl 中配置前端开发环境的流程
->
-> 按照以下顺序操作即可
->
-> 也可以参阅官方教程：[https://learn.microsoft.com/zh-cn/windows/wsl/install](https://learn.microsoft.com/zh-cn/windows/wsl/install)
+:::note
+本文根据自己在配置 wsl 过程中遇到的问题，整理出一套在 wsl 中配置前端开发环境的流程，按照以下顺序操作即可。
+
+也可以参阅官方教程：[https://learn.microsoft.com/zh-cn/windows/wsl/install](https://learn.microsoft.com/zh-cn/windows/wsl/install)
+:::
 
 ## 前言
 
@@ -85,15 +85,19 @@ wsl --set-default-version 2
 
 ## 配置
 
-> **注意：由于 9 月发布的新版 wsl2 新增了镜像网络的功能，老版教程的【网络代理】、【配置静态 ip】、【自动清理缓存】无需在进行配置。**
->
-> 更新日志在此：[https://devblogs.microsoft.com/commandline/windows-subsystem-for-linux-september-2023-update/](https://devblogs.microsoft.com/commandline/windows-subsystem-for-linux-september-2023-update/)
+:::info 新版配置变化
+**由于 9 月发布的新版 wsl2 新增了镜像网络的功能，老版教程的【网络代理】、【配置静态 ip】、【自动清理缓存】无需在进行配置。**
+
+更新日志在此：[https://devblogs.microsoft.com/commandline/windows-subsystem-for-linux-september-2023-update/](https://devblogs.microsoft.com/commandline/windows-subsystem-for-linux-september-2023-update/)
+:::
 
 ### 将 wsl2 导出到其他分区（可选）
 
 wsl2 默认安装在 C 盘，如果您为了节省 C 盘空间，可以转移至其他分区
 
-> 如果需要转移，那么尽量在首次安装或还未重度使用时进行操作，**因为后期 wsl 会非常占用空间，也会很慢**（本人已经达到了 100+GB）
+:::warning 如需转移请注意
+请尽量在首次安装或还未重度使用时进行操作，**因为后期 wsl 会非常占用空间，也会很慢**（本人已经达到了 100+GB）
+:::
 
 可分别执行以下命令：
 
