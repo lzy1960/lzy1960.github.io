@@ -9,7 +9,6 @@
 </template>
 <script setup lang="ts">
 import HopeBlogHero from "vuepress-theme-hope/modules/blog/components/BlogHero.js";
-console.log('HopeBlogHero', HopeBlogHero);
 </script>
 
 <style lang="scss" scoped>

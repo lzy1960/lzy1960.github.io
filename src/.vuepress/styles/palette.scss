@@ -3,16 +3,19 @@ $theme-color: #0AA5C4;
 
 @font-face {
   font-family: 'Sarasa Term SC';
+  font-display: fallback;
   src: url(/assets/fonts/SarasaTermSC-Regular.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'UbuntuSansNerdFont';
+  font-display: fallback;
   src: url(/assets/fonts/UbuntuSansNerdFont-Regular.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'UbuntuSansMonoNerdFont';
+  font-display: fallback;
   src: url(/assets/fonts/UbuntuSansMonoNerdFont-Regular.woff2) format('woff2');
 }
 

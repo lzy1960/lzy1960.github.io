@@ -6,6 +6,13 @@ import path from "path";
 export default defineUserConfig({
   base: "/",
 
+  head: [
+    '/assets/fonts/SarasaTermSC-Regular.woff2',
+    '/assets/fonts/UbuntuSansNerdFont-Regular.woff2',
+    '/assets/fonts/UbuntuSansMonoNerdFont-Regular.woff2',
+  ]
+    .map(v => (["link", { rel: "preload", href: v, as: 'font', type: 'font/woff2', crossorigin: true }])),
+
   locales: {
     // "/": {
     //   lang: "en-US",
