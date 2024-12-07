@@ -1,6 +1,4 @@
 // you can change colors here
-$theme-color: #0AA5C4;
-
 @font-face {
   font-family: 'Sarasa Term SC';
   src: url(/assets/fonts/SarasaTermSC-Regular.woff2) format('woff2');
@@ -16,6 +14,6 @@ $theme-color: #0AA5C4;
   src: url(/assets/fonts/UbuntuSansMonoNerdFont-Regular.woff2) format('woff2');
 }
 
-$font-family: '"UbuntuSansNerdFont", "Sarasa Term SC"';
-$font-family-heading: '"UbuntuSansNerdFont", "Sarasa Term SC"';
-$font-family-mono: '"UbuntuSansMonoNerdFont", "Sarasa Term SC"';
+$vp-font: '"UbuntuSansNerdFont", "Sarasa Term SC"';
+$vp-font-heading: '"UbuntuSansNerdFont", "Sarasa Term SC"';
+$vp-font-mono: '"UbuntuSansMonoNerdFont", "Sarasa Term SC"';
